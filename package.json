@@ -1,0 +1,48 @@
+{
+  "name": "job-application-agents-ts",
+  "version": "1.0.0",
+  "description": "Multi-agent system for tailoring job applications using Langchain and TypeScript",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["langchain", "typescript", "ai-agents", "job-application"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "langchain": "^0.1.37",
+    "@langchain/openai": "^0.0.28",
+    "@langchain/community": "^0.0.50",
+    "@langchain/core": "^0.1.60",
+    "cheerio": "^1.0.0-rc.12",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.2.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/fs-extra": "^11.0.4",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.0"
+  },
+  "overrides": {
+    "puppeteer": "^19.11.1"
+  },
+  "peerDependenciesMeta": {
+    "puppeteer": {
+      "optional": true
+    }
+  }
+} 
