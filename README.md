@@ -22,15 +22,15 @@ An advanced AI system that uses multiple specialized agents to analyze job posti
 ```
 src/
 ├── agents/                    # 🤖 Specialized agents
-│   ├── baseAgent.ts          # Base class for all agents
+│   ├── base-agent.ts          # Base class for all agents
 │   ├── researcher.ts         # Job posting analysis
 │   ├── profiler.ts           # Candidate profiling
-│   ├── resumeStrategist.ts   # Resume strategy
-│   └── interviewPreparer.ts  # Interview preparation
+│   ├── resume-strategist.ts   # Resume strategy
+│   └── interview-preparer.ts  # Interview preparation
 ├── tools/                    # 🔧 Tools and utilities
 │   └── index.ts              # Web scraping, search, file reading
 ├── crew/                     # 🎯 Agent orchestration
-│   └── jobApplicationCrew.ts # Main coordinator
+│   └── job-application-crew.ts # Main coordinator
 ├── types/                    # 📋 TypeScript interfaces
 ├── utils/                    # ⚙️ Configuration and utilities
 └── index.ts                  # 🚀 Application entry point
